@@ -160,7 +160,7 @@
     grid-column: span 2;text-align:center;font-family:'Manrope';font-weight:700;font-size:12.5px;color:#fff;background:var(--navy-2);
     padding:8px 0;
   }
-  .{position:relative;display:grid;grid-template-columns:repeat(16,1fr);margin-top:0;}
+  .markers{position:relative;display:grid;grid-template-columns:repeat(16,1fr);margin-top:0;}
   .marker{position:relative;text-align:center;padding-top:26px;}
   .marker:before{
     content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
@@ -263,7 +263,7 @@
     .gain-grid{grid-template-columns:1fr;}
     .phase-row{grid-template-columns:repeat(3,1fr);}
     .row-2{grid-template-columns:1fr;}
-    .month-line, ., .period-row{grid-template-columns:repeat(4,1fr);}
+    .month-line, .markers, .period-row{grid-template-columns:repeat(4,1fr);}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
 </style>
@@ -375,7 +375,7 @@
         <div class="month-line">
           <span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span>
         </div>
-        <div class="">
+        <div class="markers">
           <div class="marker"></div><div class="marker"></div>
           <div class="marker"></div><div class="marker"></div>
           <div class="marker"></div><div class="marker"></div>
